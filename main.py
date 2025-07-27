@@ -97,10 +97,10 @@ async def main():
     app.add_handler(CommandHandler("status", status))
 
     # Start background monitoring
-    asyncio.create_task(monitor_players(bot))
-
-    # Start the bot
-    await app.run_polling()
+   def main():
+    app = ApplicationBuilder().token(BOT_TOKEN).build()
+    ...
+    app.run_polling()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
