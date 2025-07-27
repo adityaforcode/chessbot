@@ -14,8 +14,8 @@ USERNAMES = ["aaditya4chess", "xxhimanshu", "garrymarkus", "newboy97", "aiiyk", 
 CHECK_INTERVAL = 60  # seconds between checks
 
 # Telegram Bot Configuration
-TELEGRAM_BOT_TOKEN = "8222471152:AAG21bz7AMTcBqWoD1G4zmkScjoFCIKSEhQ"
-TELEGRAM_CHAT_ID = "5643042263"
+TELEGRAM_BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
+TELEGRAM_CHAT_ID = os.getenv("CHAT_ID", "").strip()
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
