@@ -5,12 +5,13 @@ from datetime import datetime
 import pytz
 from telegram import Update, Bot
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
+import os
 
 # === CONFIGURATION ===
 USERNAMES = ["aaditya4chess", "xxhimanshu", "garrymarkus","newboy97","aiiyk","yashkuma7586","iva0912","anshul_2004","hitmeharder132","kav_2004","atharv741","Utkarsh3604","kartik689787","darklyamused","insaneishi","priyanshu2564","omenio","shubhamyadav17","abhinav_0810","mkrock"]
 CHECK_INTERVAL = 60  # seconds between checks
-BOT_TOKEN = "8222471152:AAG21bz7AMTcBqWoD1G4zmkScjoFCIKSEhQ"  # <-- Replace with your Telegram bot token
-CHAT_ID = "5643042263"  # <-- Replace with your chat ID (to receive notifications)
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")  # <-- Replace with your chat ID (to receive notifications)
 IST = pytz.timezone("Asia/Kolkata")
 
 # === GLOBALS ===
