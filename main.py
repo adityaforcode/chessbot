@@ -7,7 +7,7 @@ from flask import Flask
 import os
 
 # === CONFIGURATION ===
-USERNAMES = ["aaditya4chess", "xxhimanshu", "garrymarkus", "newboy97", "aiiyk", "yashkuma7586",
+USERNAMES = ["enpassantabesec", "xxhimanshu", "garrymarkus", "newboy97", "aiiyk", "yashkuma7586",
              "iva0912", "anshul_2004", "hitmeharder132", "kav_2004", "atharv741", "Utkarsh3604",
              "kartik689787", "darklyamused", "insaneishi", "priyanshu2564", "omenio",
              "shubhamyadav17", "abhinav_0810", "mkrock"]
